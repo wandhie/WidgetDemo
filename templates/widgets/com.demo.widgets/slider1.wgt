@@ -1,0 +1,23 @@
+<div style="xdisplay: none">
+    $$ITEM.EC_GENERATE()$
+</div>
+
+
+<div id="slider_$$ITEM.ID()$"></div>
+
+
+<script type="text/javascript">
+    $("#slider_$$ITEM.ID()$").slider({
+        min: $$ITEM.MINVALUE()$,
+        max: $$ITEM.MAXVALUE()$,
+        value: "$$ITEM.DATAITEM().VALUE()$", 
+        
+        slide: function( event, ui ) {
+            $( "#$$ITEM.ID()$" ).val( ui.value );
+        }
+    });
+
+    $("#$$ITEM.ID()$").on("change", function() {
+        $("#slider_$$ITEM.ID()$").slider("option", "value", $("#$$ITEM.ID()$").val());
+    })
+</script>

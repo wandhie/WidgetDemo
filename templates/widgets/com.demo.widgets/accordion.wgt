@@ -1,0 +1,12 @@
+<div id="$$ITEM.ID()$">
+	$$FORMCONTENT$
+</div>
+
+<script type="text/javascript">
+$(function() {
+	$("#$$ITEM.ID()$").accordion({
+		collapsible: true,
+		header: ".HeaderRow",
+	});
+})
+</script>

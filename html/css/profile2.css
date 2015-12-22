@@ -1,0 +1,19 @@
+.profile2 .navbar-inverse {
+	background-color: #013A59;
+}
+
+.profile2 #EDGE_CONNECT_PROCESS {
+	background-color: #EEF6F8;
+}
+
+.profile2 h1 {
+	color: red;
+}
+
+.profile2 .well {
+	background-color: #FFFFEC
+}
+
+.profile2 .MainContent {
+	float: right !important;
+}

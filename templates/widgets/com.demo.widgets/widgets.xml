@@ -1,0 +1,30 @@
+<widgets>
+	<widget name="DemoWidget1" type="Text">
+		<template type="source" value="demo1.wgt" />
+	</widget>
+
+	<widget name="DemoWidget2" type="Text">
+		<template type="source" value="demo2.wgt" />
+		<custom>
+			<item name="FocusColor" />
+		</custom>
+	</widget>
+
+	<widget name="DemoSlider1" type="Number">
+		<template type="header" value="slider1_header.wgt" />
+		<template type="source" value="slider1.wgt" />
+	</widget>
+
+
+	<widget name="DemoSlider2" type="Number">
+		<template type="source" value="slider2.wgt" />
+		<custom>
+			<item name="vertical" />
+		</custom>
+	</widget>
+
+	<widget name="Accordion1" type="Section">
+		<template type="source" value="accordion.wgt" />
+	</widget>
+
+</widgets>

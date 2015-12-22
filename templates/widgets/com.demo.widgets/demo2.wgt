@@ -1,0 +1,24 @@
+<!-- <input type="text" id="$$ITEM.ID()$" name="$$ITEM.DATAITEM()$" > 
+ -->
+ 
+$$ITEM.EC_GENERATE()$
+
+<div id="test_$$ITEM.ID()$"></div>
+
+<script type="text/javascript">
+    $("#$$ITEM.ID()$")
+        .on("keydown", function() {
+            var t = new Date().getTime();
+            $("#test_$$ITEM.ID()$").append(t + "<br/>");
+        })
+        .on("focus", function() {
+            $(this).css("background", "$$ITEM.FocusColor$");
+        })
+        .on("blur", function() {
+            $(this).css("background", "");
+        })
+</script>
+
+
+
+
